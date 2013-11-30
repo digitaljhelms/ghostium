@@ -1,5 +1,12 @@
 <button data-action="open-drawer" id="drawer-button" class="drawer-button"><i class="fa fa-bars"></i></button>
 <nav tabindex="-1" class="drawer">
+  <button data-action="open-drawer" id="drawer-button" class="drawer-button">
+    {{#if @blog.logo}}
+      <img src="{{@blog.logo}}">
+    {{else}}
+      <i class="fa fa-bars"></i>
+    {{/if}}
+  </button>
   <div class="drawer-container">
     <!--.drawer-search(role="search")-->
     <ul role="navigation" class="drawer-list">
