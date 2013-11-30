@@ -17,6 +17,11 @@
   <div class="wrapper-container">
     {{> custom/featured this}}
 
+    <header role="pagination" class="post-list-header">
+        <h1>Blog Posts</h1>
+        {{pagination}}
+    </header>
+
     <section class="post-list">
       {{#foreach posts}}
         {{> post/list this}}
