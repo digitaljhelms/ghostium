@@ -5,6 +5,7 @@
   width: 30%;
   height: 100%;
   z-index: 100;
+  background: $cover-background-color;
 
   @include breakpoint(medium) {
     width: 100%;
